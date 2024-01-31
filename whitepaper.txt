@@ -1,0 +1,25 @@
+AnswerNFTs
+A simple app that allows you to mint a question, puzzle, riddle, etc, in form of NFTs and sell it.
+
+The inception of Idea:
+While wandering about the possibility of applying the concept of NFTs in real-life scenarios, we came across this idea of using it to store a question whose answer would act as the key to unlocking the NFT, that is, buying it. The NFTs would generate values as questions, puzzles, riddles that are very difficult to solve or find an answer to, would remain to their respective owners until someone else finds the answer to the same thing.
+Functioning
+The NFT app would function in this way - only the person who produces the correct answer of the respective NFT would be able to transfer the respective NFT to themselves.
+In this way, the NFTs would be priced based on their difficulties as the NFTs whose answers are very tough and could be solved only by a few people would make them a rare asset.
+Moreover, this could be turned into a profitable business by monetizing the minting process and charging a fee for the services the platform would provide, such as the minting of NFT, listing in the NFT marketplace, a fee for the owner every time someone attempts to buy their NFT(explained below at Further Improvements #2)
+Dev:
+The NFT contract we referenced has been taken from this Github library - https://github.com/claudebarde/taquito-pinata-tezos-nft/blob/main/contract/NFTS_contract.mligo 
+We have just modified the "mint" functions.
+In the "mint" function, it takes an answer as an input; while minting the token.
+We check the answer given by the user is correct or not by comparing the hash of the answer already stored in the token metadata.
+Further Improvements
+•	Monetizing the minting process:
+A fee would be charged to mint the NFTs to monetize and the user would be provided services as explained in the next point.
+•	For every "buy" function invoked user has to pay a Fee:
+This would further increase the difficulty for users, to find whether their answer is correct or not, every time they have to pay a fee. It would also prevent people from guessing the answer to the question. This fee would be sent to the respective NFTs' owner, further promoting the minting of NFTs in our platform.
+•	A decentralized protocol to vote whether an AnswerNFT is Valid or Invalid.
+There would be scenarios where people would mint questions with wrong answer hashes and then, even while producing the right hashes to question, the NFTs could not be transferred. These can be prevented by blacklisting these NFTs and letting the community know about them.
+Also, the community could blacklist any NFTs which are a copy of or similar to NFTs to preserve originality.
+•	Cross Chain transferring of Assets:
+The functionality to transfer NFTs across other blockchains could be introduced.
+
