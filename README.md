@@ -4,9 +4,7 @@ A simple app that allows users to mint questions, puzzles, and riddles in form o
 For further understanding of the Project Idea, please look at "whitepaper.txt".
 
 **Dev work:**
-
-I've updated the NFT FA2 contract which I referenced from here(https://github.com/claudebarde/taquito-pinata-tezos-nft/blob/main/contract/NFTS_contract.mligo) to change the mint function to accept the answer(string) as input and then store it with the IPFS hash.
-Then I created an entrypoint to retrieve this answer_hash stored from another contract(GetAnswerHash).
+I created an entrypoint to retrieve this answer_hash stored from another contract(GetAnswerHash).
 I have not added the functionality of putting the NFT for sale as it is already implemented and focused more on the unique functionality I am offering with my project.
 You can look at the functionality of letting users buy NFT only if they provide the correct answer inside token_shop_contract.mligo
 I joined the Hackathon late and before working on my project, I have to first learn Tezos development and then work on it. I haven't still understood the frontend development and deployment process(I figured out that you have to provide initial storage but I was struggling with it) so I haven't deployed my project to testnet/mainnet and neither built the frontend.
