@@ -1,4 +1,5 @@
-AnswerNFTs
+Quickfix
+
 A simple app that allows you to mint a question, puzzle, riddle, etc, in form of NFTs and sell it.
 
 The inception of Idea:
@@ -6,10 +7,10 @@ While wandering about the possibility of applying the concept of NFTs in real-li
 Functioning
 The NFT app would function in this way - only the person who produces the correct answer of the respective NFT would be able to transfer the respective NFT to themselves.
 In this way, the NFTs would be priced based on their difficulties as the NFTs whose answers are very tough and could be solved only by a few people would make them a rare asset.
-Moreover, this could be turned into a profitable business by monetizing the minting process and charging a fee for the services the platform would provide, such as the minting of NFT, listing in the NFT marketplace, a fee for the owner every time someone attempts to buy their NFT(explained below at Further Improvements #2)
+Moreover, this could be turned into a profitable business by monetizing the minting process and charging a fee for the services the platform would provide, such as the minting of NFT, listing in the NFT marketplace, a fee for the owner every time someone attempts to buy their NFT
+
 Dev:
-The NFT contract we referenced has been taken from this Github library - https://github.com/claudebarde/taquito-pinata-tezos-nft/blob/main/contract/NFTS_contract.mligo 
-We have just modified the "mint" functions.
+I have just modified the "mint" functions.
 In the "mint" function, it takes an answer as an input; while minting the token.
 We check the answer given by the user is correct or not by comparing the hash of the answer already stored in the token metadata.
 Further Improvements
