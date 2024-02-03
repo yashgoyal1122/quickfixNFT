@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='h-lvh'>
       <Header/>
-      <div className='h-full'>
+      <div className='h-full flex'>
         <Sidebar />
         <Outlet />
       </div>
